@@ -1002,7 +1002,7 @@ ul {
   border-radius: 4px;
 }
 
-.ckeckbox {
+.checkbox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1030,6 +1030,12 @@ ul {
   height: 1px;
   width: 1px;
 }
+.checkbox__input:checked + .checkbox__icon {
+  border: 0;
+}
+.checkbox__input:checked + .checkbox__icon .checkbox__bird {
+  opacity: 1;
+}
 .checkbox__icon {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1047,12 +1053,4 @@ ul {
 }
 .checkbox__link {
   color: #2196f3;
-}
-
-.checkbox__input:checked + .checkbox__icon {
-  border: none;
-}
-
-.checkbox__input:checked + .checkbox__bird {
-  opacity: 1;
 }/*# sourceMappingURL=main.css.map */
