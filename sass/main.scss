@@ -1,0 +1,45 @@
+ body {
+  font-family: Roboto, Raleway, sans-serif;
+  color: var(--main-text-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  list-style: none;
+}
+.img-display {
+  display: block;
+  max-width: 100%;
+}
+.container {
+	margin: auto;
+	outline: 1px solid tomato;
+	width: 1200px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+
+@import './utils/variables';
+@import './components/pageheader';
+@import './components/hero';
+@import './components/benefits';
+@import './components/effort';
+@import './components/ourteam';
+@import './components/clients';
+@import './components/pagefooter';
+@import './components/portfolio';
+@import './components/backdrop';
+
+

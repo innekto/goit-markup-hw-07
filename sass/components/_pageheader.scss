@@ -1,0 +1,143 @@
+.pageheader {
+	background-color: $white-color;
+	border-bottom-color: #ececec;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+
+	&__container {
+		display: flex;
+		align-items: center;
+	}
+}
+
+
+
+.nav {
+	display: flex;
+	align-items: center;
+
+	&__list {
+		display: flex;
+		padding-left: 0;
+		margin-left: 93px;
+		gap: 50px;
+	}
+
+
+
+	//   &__item {
+	//   }
+
+	&__studiolink,
+	&__portlink,
+	&__contlink {
+		display: block;
+		position: relative;
+		color: $main-text-color;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 1.14;
+		text-decoration: none;
+		letter-spacing: 0.02em;
+		padding: 32px 0;
+
+		transition-property: color;
+		transition-duration: 250ms;
+		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+		&:hover,
+		&:focus {
+			color: $active-text-color;
+		}
+	}
+
+
+
+	&__studiolink--active,
+	&__portlink--active {
+		color: $active-text-color;
+	}
+
+	&__studiolink--active:after {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translate(-50%);
+		display: block;
+
+		background-color: $active-text-color;
+		width: 48px;
+		height: 4px;
+		border-radius: 2px;
+	}
+
+	&__portlink--active:after {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translate(-50%);
+		display: block;
+
+		background-color: $active-text-color;
+		width: 78px;
+		height: 4px;
+		border-radius: 2px;
+	}
+}
+
+.logo {
+	font-family: Raleway, sans-serif;
+	color: $active-text-color;
+	text-decoration: none;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.19;
+	letter-spacing: 0.03em;
+
+	&__header {
+		color: $first-logo-color;
+	}
+}
+
+// .nav-item {
+// }
+
+.contacts {
+	display: flex;
+	padding-left: 0;
+	margin-left: auto;
+	gap: 50px;
+
+	//   &__item {
+	//   }
+
+	&__link {
+		display: flex;
+		gap: 10px;
+		align-items: center;
+		justify-content: center;
+		color: $secondary-text-color;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 1.14;
+		text-decoration: none;
+		letter-spacing: 0.02em;
+		padding: 0;
+
+		transition-property: color;
+		transition-duration: 250ms;
+		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	}
+
+	&__link:hover,
+	&__link:focus {
+		color: $active-text-color;
+	}
+
+	&__icon {
+		display: block;
+		fill: currentColor;
+	}
+}
