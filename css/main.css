@@ -817,7 +817,7 @@ ul {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.shutter__discription {
+.shutter_discription {
   padding-left: 24px;
   padding-right: 24px;
   width: 100%;
